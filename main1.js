@@ -18,11 +18,11 @@
 
 
 
-MÅL: skala ett bolean som säger hurvida paketet kommer fram dagen innan det skickades
-input: Allt ska vara skrivet i t tid. number tidszon skickat från (time), number tidszon (time) skickas till, sedan även ett klockslag då det skickades och ett klockslag när det kom fram
-Output: Bolean, sant eller falskt
+// MÅL: skala ett bolean som säger hurvida paketet kommer fram dagen innan det skickades
+// input: Allt ska vara skrivet i t tid. number tidszon skickat från (time), number tidszon (time) skickas till, sedan även ett klockslag då det skickades och ett klockslag när det kom fram
+// Output: Bolean, sant eller falskt
 
-1. ta reda på hur lång tid det tar att skicka, addera sedan det med differensen av tidszonerna (hur mycket det skiljer i tid)
+// 1. ta reda på hur lång tid det tar att skicka, addera sedan det med differensen av tidszonerna (hur mycket det skiljer i tid)
 
 function was_package_received_yesterday(tz_from, tz_to, start, duration) {
     const arrivalLocal = start + duration +(tz_to -tz_from)
